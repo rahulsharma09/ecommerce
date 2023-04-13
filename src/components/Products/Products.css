@@ -3,11 +3,17 @@
     max-width: 170px;
     background-size: cover;
 }
+*{
+    color: black
+}
 .productsWrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     /* background-color: red; */
+}
+a:hover{
+    text-decoration: none;
 }
 img {
     height: 180px;
@@ -16,8 +22,13 @@ img {
     margin-bottom: 30px!important;
 }
 .productsWrapper>.card:hover{
-    box-shadow: 2px 3px 14px lightgrey;
+    box-shadow: 2px 3px 14px lightgrey!important;
     cursor: pointer;
+}
+.price-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 @media only screen and (max-width: 400px){
     .productsWrapper{
