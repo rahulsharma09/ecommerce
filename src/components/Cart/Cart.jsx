@@ -26,7 +26,7 @@ const Cart = () => {
                 <h5>${elem.price}</h5>
               </div>
               <div>
-                <button className="ml-4 btn btn-danger" onClick={() => handleRemove(elem.id)}>Remove</button>
+                <button className="ml-4 btn btn-danger remove-btn" onClick={() => handleRemove(elem.id)}>Remove</button>
               </div>
             </div>
           );

@@ -11,3 +11,15 @@
 .cart-data{
     margin-left: 25%;
 }
+@media only screen and (max-width: 400px){
+    .cartCard{
+        flex-direction: column;
+    }
+    .cart-data{
+        margin-left: 0px;
+    }
+    .remove-btn{
+        display: flex;
+        margin-left: auto!important;
+    }
+}
