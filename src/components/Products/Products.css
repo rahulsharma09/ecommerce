@@ -19,3 +19,15 @@ img {
     box-shadow: 2px 3px 14px lightgrey;
     cursor: pointer;
 }
+@media only screen and (max-width: 400px){
+    .productsWrapper{
+        display: block;
+    }
+    .cart-btn{
+        margin-left: auto;
+        display: flex;
+    }
+    .card{
+        margin-bottom: 15px;
+    }
+}

@@ -26,7 +26,7 @@ const Products = () => {
             <img className="prod-image" src={product.image} alt="" />
             <p>{product.title}</p>
             <h5>{product.price}</h5>
-            <button onClick={() => handleAdd(product)} className="btn btn-primary">Add to cart</button>
+            <button onClick={() => handleAdd(product)} className="btn btn-primary cart-btn">Add to cart</button>
           </div>
         </>
       ))}
