@@ -1,0 +1,21 @@
+.prod-image{
+    min-width: 170px;
+    max-width: 170px;
+    background-size: cover;
+}
+.productsWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    /* background-color: red; */
+}
+img {
+    height: 180px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 30px!important;
+}
+.productsWrapper>.card:hover{
+    box-shadow: 2px 3px 14px lightgrey;
+    cursor: pointer;
+}
