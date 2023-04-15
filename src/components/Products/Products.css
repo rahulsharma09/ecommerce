@@ -10,7 +10,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    /* background-color: red; */
 }
 a:hover{
     text-decoration: none;
@@ -21,9 +20,15 @@ img {
     margin: auto;
     margin-bottom: 30px!important;
 }
-.productsWrapper>.card:hover{
-    box-shadow: 2px 3px 14px lightgrey!important;
+.custom-card:hover{
+    box-shadow: 2px 5px 14px rgb(177, 177, 177)!important;
     cursor: pointer;
+}
+.custom-card{
+    min-height: 360px!important;
+    max-height: 360px!important;
+    background-color: white!important;
+    border-radius: 5px;
 }
 .price-div{
     display: flex;

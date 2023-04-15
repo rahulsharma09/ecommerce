@@ -4,6 +4,7 @@ import Cart from "./components/Cart/Cart";
 import Navbar from "./components/Navbar/Navbar";
 import ProductDetail from "./components/ProductDetails/ProductDetail";
 import { Provider } from "react-redux";
+// import Footer from "./components/Footer/Footer";
 import store from "./store/store";
 import "./App.css";
 

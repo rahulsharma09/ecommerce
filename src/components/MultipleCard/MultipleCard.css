@@ -1,0 +1,28 @@
+.item-section{
+    display: grid;
+    grid-template-columns: auto auto;
+    z-index: 1000;
+    text-align: center;
+}
+.multiple-card{
+    min-width: 24%;
+    max-width: 24%;
+    background-color: white;
+    padding: 10px;
+    z-index: 1000;
+    padding-bottom: 30px;
+    /* border: 1px solid grey; */
+}
+.multiple-image{
+    width: 140px;
+    height: 100px;
+    margin-bottom: 2px!important;
+    /* margin: 0px; */
+}
+.image-div>p{
+    font-size: 12px;
+}
+.multiple-section{
+    display: flex;
+    justify-content: space-between;
+}

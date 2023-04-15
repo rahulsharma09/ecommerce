@@ -1,12 +1,13 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { add } from '../../store/cartSlice';
 import { useState, useEffect } from 'react';
 import './ProductDetail.css'
 
 const ProductDetail = () => {
   const dispatch = useDispatch();
+  const items = useSelector(state => state.cart);
   const data = useParams();
   const productId = data.id;
   const [product, setProduct] = useState({});
@@ -22,7 +23,16 @@ const ProductDetail = () => {
     fetchProducts();
   }, []);
   const handleCart = (product) => {
-    dispatch(add(product))
+    let flag = true;
+    items.map((elem) => {
+      if(elem.id == product.id){
+        alert("Item already added to cart");
+        flag = false;
+      }
+    })
+    if(flag){
+      dispatch(add(product))
+    }
   }
   return (
     <div className='row p-5'>

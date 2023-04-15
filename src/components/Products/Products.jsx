@@ -24,19 +24,13 @@ const Products = () => {
       {products.map((product) => (
         <>
           <Link to={`product/${product.id}`}>
-            <div className="card p-4" key={product.id}>
+            <div className="custom-card p-4" key={product.id}>
               <img className="prod-image" src={product.image} alt="" />
-              <p>{product.title}</p>
+              <p>{product.title.substring(0,60)}...</p>
               <div className="price-div">
               <h5>${product.price}</h5>
               <p>{product.rating.rate} / 5</p>
               </div>
-              {/* <button
-                onClick={() => handleAdd(product)}
-                className="btn btn-primary cart-btn"
-              >
-                Add to cart
-              </button> */}
             </div>
           </Link>
         </>
