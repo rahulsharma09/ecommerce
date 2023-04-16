@@ -21,6 +21,7 @@ const ProductDetail = () => {
       setProduct(data)
     }
     fetchProducts();
+    window.scrollTo(0,0)
   }, []);
   const handleCart = (product) => {
     let flag = true;
@@ -35,7 +36,7 @@ const ProductDetail = () => {
     }
   }
   return (
-    <div className='row p-5'>
+    <div className='product-section row p-5'>
         <div className="col-lg-5">
           <img className='demo-image' src={product.image} alt="" />
         </div>
