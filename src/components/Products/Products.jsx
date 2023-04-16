@@ -3,6 +3,7 @@ import { add } from "../../store/cartSlice";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import "./Products.css";
+import Skeleton from "react-loading-skeleton";
 const Products = () => {
   const [products, setProducts] = useState([]);
   const dispatch = useDispatch();
@@ -13,14 +14,26 @@ const Products = () => {
       console.log(data);
       setProducts(data);
     };
-    fetchProducts();
+    setTimeout(() => {
+      fetchProducts();
+    }, 3500)
   }, []);
 
   const handleAdd = (product) => {
     dispatch(add(product));
   };
   return (
-    <div className=" productsWrapper p-4">
+    <>
+      {
+      products.length <= 0 ?
+      <div className="skeleton-class">
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((loading) => (
+        <div  key={loading}>
+         <Skeleton width={300} height={300} />
+        </div>))}
+      </div>
+     : 
+      <div className=" productsWrapper p-4">
       {products.map((product) => (
         <>
           <Link to={`product/${product.id}`}>
@@ -36,6 +49,9 @@ const Products = () => {
         </>
       ))}
     </div>
+    }
+    </>
+    
   );
 };
 

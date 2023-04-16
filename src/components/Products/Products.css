@@ -12,6 +12,12 @@
     gap: 30px;
     margin-bottom: 30px;
 }
+.skeleton-class{
+    /* background: red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
 a:hover{
     text-decoration: none;
 }
@@ -48,6 +54,10 @@ img {
         display: flex;
     }
     .card{
+        margin-bottom: 15px;
+    }
+    .skeleton-class{
+        display: block;
         margin-bottom: 15px;
     }
 }

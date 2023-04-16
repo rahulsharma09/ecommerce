@@ -2,6 +2,8 @@ import React from 'react'
 import Products from '../Products/Products'
 import Carousal from '../Carousal/Carousal'
 import MultipleCard from '../MultipleCard/MultipleCard'
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 import './Home.css'
 
 const Home = () => {
@@ -99,7 +101,7 @@ const Home = () => {
         <MultipleCard multipleItemProducts={multipleItemProducts} />
         <h3>Today's Deals</h3>
         <hr />
-        <Products />
+        <Products /> 
       </section>
     </div>
   )
