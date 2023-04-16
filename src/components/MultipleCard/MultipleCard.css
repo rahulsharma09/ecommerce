@@ -26,3 +26,12 @@
     display: flex;
     justify-content: space-between;
 }
+@media only screen and (max-width:400px){
+    .multiple-section{
+        display: block;
+    }
+    .multiple-card{
+        min-width: 100%!important;
+        z-index: 1000;
+    }
+}
