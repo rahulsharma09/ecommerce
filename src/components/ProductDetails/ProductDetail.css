@@ -2,3 +2,6 @@
     width: 50%!important;
     height: 300px!important;
 }
+.product-section {
+    min-height: 90vh;
+}

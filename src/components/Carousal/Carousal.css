@@ -2,6 +2,3 @@
     height: 500px!important;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, transparent);
 }
-.carousel{
-    /* z-index: -999!important; */
-}

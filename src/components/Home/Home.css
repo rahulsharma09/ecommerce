@@ -2,3 +2,7 @@
     /* background-color: red; */
     margin-top: -15%;
 }
+.App{
+    position: relative;
+    height: 100%;
+}

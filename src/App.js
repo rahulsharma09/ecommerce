@@ -4,13 +4,13 @@ import Cart from "./components/Cart/Cart";
 import Navbar from "./components/Navbar/Navbar";
 import ProductDetail from "./components/ProductDetails/ProductDetail";
 import { Provider } from "react-redux";
-// import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 import store from "./store/store";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App content-container">
       <Provider store={store}>
         <BrowserRouter>
           <Navbar />
@@ -19,6 +19,7 @@ function App() {
             <Route path="product/:id" element={<ProductDetail />}></Route>
             <Route path="cart/" element={<Cart />}></Route>
           </Routes>
+          <Footer />
         </BrowserRouter>
       </Provider>
     </div>

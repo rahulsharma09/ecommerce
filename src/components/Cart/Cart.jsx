@@ -11,7 +11,7 @@ const Cart = () => {
     dispatch(remove(id));
   };
   return (
-    <div className="p-4">
+    <div className="cart-section p-4">
       <h3>Your Cart</h3>
       <hr />
       {items.length > 0 ? (
