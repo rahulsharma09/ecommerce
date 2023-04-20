@@ -1,0 +1,47 @@
+.signup-section{
+    min-height: 90vh;   
+}
+.image-section-register{
+    background-color: rgb(59, 255, 134);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+.form-section{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input{
+    width: 90%!important;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-right: auto;
+}
+.signup-btn{
+    margin: auto;
+    display: flex;
+}
+.form-card{
+    border: 1px solid lightgrey;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.image-section-register>img{
+    align-self: center;
+    width: 70%;
+    height: 500px;
+}
+@media only screen and (max-width: 400px){
+    .image-section-register{
+        display: none;
+    }
+}

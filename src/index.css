@@ -8,7 +8,17 @@ body {
   background-color: #f7f7f7;
   overflow-x: hidden;
 }
+.nav-item>a{
+  color: white!important;
+}
 
+.nav-item>a:hover{
+  color: white!important;
+  text-decoration: underline;
+}
+*{
+  overflow-x: hidden;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

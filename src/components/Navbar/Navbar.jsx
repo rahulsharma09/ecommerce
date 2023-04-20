@@ -18,6 +18,9 @@ const Navbar = () => {
           <li className="nav-item active">
             <Link to='/'>Home</Link>
           </li>
+          <li className="nav-item ml-4">
+            <Link to='login/'>Login / Signup</Link>
+          </li>
           <li className="ml-3 nav-item active">
           <Link to='cart/'>Cart</Link>
           <span className='ml-3 text-white'>Cart Items: {items.length}</span>
