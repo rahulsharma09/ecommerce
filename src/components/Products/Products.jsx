@@ -16,7 +16,7 @@ const Products = () => {
     };
     setTimeout(() => {
       fetchProducts();
-    }, 3500)
+    }, 1800)
   }, []);
 
   const handleAdd = (product) => {
