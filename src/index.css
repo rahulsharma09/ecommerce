@@ -16,7 +16,7 @@ body {
   color: white!important;
   text-decoration: underline;
 }
-*{
+html,body{
   overflow-x: hidden;
 }
 
